@@ -10,14 +10,6 @@ public class LambdaExpression {
 
         List<Integer> values= Arrays.asList(1,2,3,4,5,6);
 
-
-        //1. for loop for printing the list
-        /*for (int i=0;i<6;i++){
-            System.out.println(values.get(i));
-
-        }*/
-
-
         //2. Using Iterator
        /* Iterator<Integer> i= values.iterator();
         while(i.hasNext())
