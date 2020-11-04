@@ -7,7 +7,6 @@ public class AllMethod {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 
         // Conventional way of printing arraylist
-
         System.out.println("Printing List using advance for loop");
         for (int number : numbers) {
 
