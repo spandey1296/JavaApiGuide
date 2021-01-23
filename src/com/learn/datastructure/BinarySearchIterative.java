@@ -13,7 +13,6 @@ public class BinarySearchIterative {
             System.out.println("Element found at index:"+ found_index);
         }
 
-
     }
 
     public static int recursiveBinarySearch(int[] array, int start_index, int end_index, int element) {
