@@ -18,11 +18,11 @@ public class Solution {
 
           //  llist.head = insertNodeAtHead(llist.head, llistItem);
 
-            llist.head = insertNodeAtTail(llist.head, llistItem);
+           llist.head = insertNodeAtTail(llist.head, llistItem);
 
 
         }
-
+        llist.head=insertNodeAtPosition(llist.head,100,2);
       printLinkedList(llist.head);
     }
 
@@ -30,7 +30,7 @@ public class Solution {
 
         SinglyLinkedListNode current = head;
         while (current != null) {
-            System.out.print(current.data);
+            System.out.print(current.data + " ");
             current = current.next;
         }
     }
@@ -50,8 +50,6 @@ public class Solution {
 
     static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
 
-
-
         SinglyLinkedListNode newNode= new SinglyLinkedListNode(data);
         if(head==null){
             head=newNode;
@@ -68,6 +66,24 @@ public class Solution {
 
     }
 
+    static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int data, int position) {
+
+
+        SinglyLinkedListNode newNode= new SinglyLinkedListNode(data);
+
+        int index=0;
+
+        SinglyLinkedListNode current_node=head;
+
+        while(index  <position - 1){
+            current_node=current_node.next;
+            index++;
+
+        }
+        newNode.next=current_node.next;
+        current_node.next=newNode;
+        return head;
+    }
 
 
 
@@ -101,3 +117,28 @@ class SinglyLinkedList {
         this.tail = null;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
