@@ -1,4 +1,7 @@
 package com.company;
+/*Author: shivantpandey
+portfolio:spandey1296.github.io
+*/
 import java.util.Arrays;
 import java.util.List;
 public class AllMethod {

@@ -1,5 +1,7 @@
 package com.binarysearch.problem;
-
+/*Author: shivantpandey
+portfolio:spandey1296.github.io
+*/
 public class BinarySearchTree {
     Node root;
     BinarySearchTree() {

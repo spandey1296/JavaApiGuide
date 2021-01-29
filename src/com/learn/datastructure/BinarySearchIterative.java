@@ -1,5 +1,9 @@
 package com.learn.datastructure;
 
+
+/*Author: shivantpandey
+portfolio:spandey1296.github.io
+*/
 public class BinarySearchIterative {
     public static void main(String[] args) {
 
