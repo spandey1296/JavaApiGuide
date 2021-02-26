@@ -1,6 +1,5 @@
 package com.leetcode.solution;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MaxProduct {
@@ -11,7 +10,7 @@ public class MaxProduct {
         int n=sc.nextInt();
 
 
-     int arr[] = new int[n];
+     int[] arr = new int[n];
 
         for (int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
@@ -20,16 +19,9 @@ public class MaxProduct {
 
         MaxValueProdcut mx= new MaxValueProdcut();
        int result=  mx.maxProduct(arr);
-
-
-        System.out.println(result);
-
-
-
-
+       System.out.println(result);
 
     }
-
 }
 class MaxValueProdcut {
     public int maxProduct(int[] nums) {
@@ -37,10 +29,10 @@ class MaxValueProdcut {
         if(nums.length == 1) return nums[0];
 
         int maxProduct = 0, currProduct = 1;
-        for(int i = 0; i < nums.length; i++){
-            currProduct *= nums[i];
+        for (int num : nums) {
+            currProduct *= num;
             maxProduct = Math.max(maxProduct, currProduct);
-            if(currProduct == 0) currProduct = 1;
+            if (currProduct == 0) currProduct = 1;
         }
 
         currProduct = 1;
